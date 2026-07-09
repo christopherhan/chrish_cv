@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR Snow Goggles</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="maincontent">
+    <h2><a href="index.html">Christopher Han</a></h2>
+
+    <a href="index.html">Projects</a>
+
+    <h2>AR Snow Goggles</h2>
+    <ul>
+      <li>Overview</li>
+      <ul>
+        <li>AR Snow Goggles is a hardware project building augmented-reality ski and snowboard goggles to improve on-moutain visibility on the low visibility days.</li>
+        <li>Inspired and motivated by my own experiences in the backcountry.</li>
+        <li>Currently in active development. Claude is helping immensely with the design and development.</li>
+      </ul>
+      <li>Problem</li>
+      <ul>
+        <li>I wanted to chase powder, but the visibility was too low due to the storm clouds overhead. The best terrain is in the backcoutnry, but it's also the most dangerous.</li>
+        <li>The combination of low visibility and dangerout terrain is very high risk and high consequence if you make a mistake.</li>
+        <li>The goggles boost brightness, contrast, and overall visbility so you can see the terrain features in front of you and improve situational awareness - minimizing risk.</li>
+        <li>Highlights gradients in sloping terrain and edges of cliffs and cliffsides.</li>
+      </ul>
+      <li>BOM</li>
+      <ul>
+        <li>GPU: NVIDIA Jetson Orin Nano Developer Kit</li>
+        <li>Camera: Arducam xISP - Darksee, Pre-tuned ISP, 2MP Low Light MIPI Camera</li>
+        <li>Display: 0.49" Micro OLED Display 1920x1080 3000 NITS</li>
+        <li>Combiner / Beamsplitter: 25 x 25mm 30R/70T, VIS Plate Beamsplitter</li>
+      </ul>
+      <li>Design</li>
+      <ul>
+        <li>Light enters the camera, processed by the GPU, output to the mini-OLED display, directed to the eyes via the beamsplitter and combiner.</li>
+        <li>CLAHE is used to enhance the contrast of the image from the camera.</li>
+      </ul>
+    </ul>
+  </div>
+</body>
+</html>
