@@ -13,7 +13,7 @@
     <a href="index.html">Projects</a>
 
     <h2>AR Snow Goggles</h2>
-    <p>Note: This project is in active development and a work-in-progress. I'll update this post as I make progress.</p>
+    <p>Note: This project is in active development. I'll update this page as I make progress.</p>
     <ul>
       <li>Overview</li>
       <ul>
@@ -47,13 +47,13 @@
         <li>GPU: NVIDIA Jetson Orin Nano</li>
         <li>Camera: Arducam xISP - Darksee, Pre-tuned ISP, 2MP Low Light MIPI Camera</li>
         <li>Display: 0.49" Micro OLED Display, 1920x1080 resolution, 3000 NITS</li>
-        <li>Beamsplitter: 25 x 25mm 30R/70T (Reflective / Transmissive)</li>
+        <li>Combiner: 25 x 25mm 30R/70T (Reflective / Transmissive)</li>
         <li>Optics: OPE05-12XN Magnifying lens</li>
       </ul>
       <li>Architecture</li>
       <ul>
         <figure class="architecture-diagram" aria-label="AR Snow Goggles system architecture">
-          <img src="assets/ar-snow-goggles/architecture.png" alt="AR Snow Goggles system architecture diagram">
+          <img src="assets/ar-snow-goggles/architecture-2.png" alt="AR Snow Goggles system architecture diagram">
         </figure>
       </ul>
       <li>Hardware</li>
@@ -64,7 +64,7 @@
         </figure>
         <figure class="hardware-figure">
           <img src="assets/ar-snow-goggles/all-components.jpg" alt="All components laid out">
-          <figcaption>Clockwise from top left: Glass beamsplitter, micro OLED display, HDMI adapter board for the display, and magnifying lens</figcaption>
+          <figcaption>Clockwise from top left: Glass combiner, micro OLED display, HDMI adapter board for the display, and magnifying lens</figcaption>
         </figure>
         <figure class="hardware-figure">
           <img src="assets/ar-snow-goggles/f1-angle.gif" alt="F1 prototype angle view">
@@ -75,7 +75,7 @@
           <figcaption>What the video looks like through the magnifying lens</figcaption>
         </figure>
       </ul>
-      <li>Image processing. Boosting the contrast with CLAHE and denoising with bilateral filtering</li>
+      <li>Image processing
       <ul>
         <figure class="hardware-figure">
           <img src="assets/ar-snow-goggles/clahe-full-range.gif" alt="CLAHE full range comparison">
